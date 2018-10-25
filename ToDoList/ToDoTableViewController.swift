@@ -90,7 +90,15 @@ class ToDoTableViewController: UITableViewController {
     */
     
     @IBAction func unwindToToDoList(segue: UIStoryboardSegue) {
+        guard segue.identifier == "saveUnwind" else { return }
         
+        guard let toDoViewController = segue.source as? ToDoViewController else { return }
+        
+        guard let todo = toDoViewController.todo else { return }
+        
+        let indexPath = IndexPath(row: todos.count, section: 0)
+        todos.append(todo)
+        tableView.insertRows(at: [indexPath], with: .automatic)
     }
 
 }
