@@ -13,6 +13,7 @@
 		69B626A0217E475D001DBC4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69B6269E217E475D001DBC4A /* LaunchScreen.storyboard */; };
 		69B626A8217E4949001DBC4A /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B626A7217E4949001DBC4A /* ToDo.swift */; };
 		69B626AA217E49F7001DBC4A /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B626A9217E49F7001DBC4A /* ToDoTableViewController.swift */; };
+		69BC5AA821823CE000412CC6 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BC5AA721823CE000412CC6 /* ToDoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		69B626A1217E475D001DBC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69B626A7217E4949001DBC4A /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		69B626A9217E49F7001DBC4A /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		69BC5AA721823CE000412CC6 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				69B62695217E4754001DBC4A /* AppDelegate.swift */,
 				69B62699217E4754001DBC4A /* Main.storyboard */,
+				69BC5AA721823CE000412CC6 /* ToDoViewController.swift */,
 				69B626A7217E4949001DBC4A /* ToDo.swift */,
 				69B626A9217E49F7001DBC4A /* ToDoTableViewController.swift */,
 				69B6269C217E475D001DBC4A /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69BC5AA821823CE000412CC6 /* ToDoViewController.swift in Sources */,
 				69B62696217E4754001DBC4A /* AppDelegate.swift in Sources */,
 				69B626AA217E49F7001DBC4A /* ToDoTableViewController.swift in Sources */,
 				69B626A8217E4949001DBC4A /* ToDo.swift in Sources */,
