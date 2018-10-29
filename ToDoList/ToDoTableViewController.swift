@@ -6,11 +6,19 @@
 //  Copyright © 2018 Denis Bystruev. All rights reserved.
 //
 
+import RealmSwift
 import UIKit
 
 class ToDoTableViewController: UITableViewController {
     
-    var todos = [ToDo]()
+    var todos = [ToDo]() {
+        didSet {
+            // Persist the data
+            try! ToDo.realm.write {
+                ToDo.realm.add(todos)
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
