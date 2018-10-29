@@ -64,6 +64,9 @@ class ToDoTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            try! ToDo.realm.write {
+                ToDo.realm.delete(todos[indexPath.row])
+            }
             todos.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
